@@ -1,0 +1,12 @@
+connect_UART
+
+sudo apt install screen
+screen /dev/*DEVICE NAME* Baud_RATE
+
+After entering the command reboot the device and you should see the data on the screen
+
+You need to find the device name using ls /dev
+Baud rate is typically specified in the device specs. Example baud rates that mostly work are 9600 and 115200
+
+How to exit the screen command?
+press ctrl+A and then K - screen asks if you want to kill the process, then press Y
